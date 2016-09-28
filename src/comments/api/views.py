@@ -90,7 +90,7 @@ class CommentDetailAPIView(DestroyModelMixin, UpdateModelMixin, RetrieveAPIView)
 
 class CommentListAPIView(ListAPIView):
     serializer_class = CommentListSerializer
-    permission_classes = [AllowAny]
+    #permission_classes = [IsAuthenticated]
     filter_backends = [SearchFilter, OrderingFilter]
     search_fields = ['content', 'user__first_name']
     pagination_class = PostPageNumberPagination  # PageNumberPagination
