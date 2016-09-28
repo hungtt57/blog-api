@@ -134,8 +134,8 @@ class CommentDetailSerializer(ModelSerializer):
         fields = [
             'id',
             'user',
-            'content_type',
-            'object_id',
+            # 'content_type',
+            # 'object_id',
             'content',
             'reply_count',
             'replies',
@@ -143,8 +143,8 @@ class CommentDetailSerializer(ModelSerializer):
             'content_object_url',
         ]
         read_only_fields = [
-            'content_type',
-            'object_id',
+            # 'content_type',
+            # 'object_id',
             'reply_count',
             'replies',
         ]
